@@ -1,13 +1,13 @@
 {% set name = "aiida-bigdft" %}
-{% set version = "0.2.6" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aiida-bigdft-{{ version }}.tar.gz
-  sha256: a9d13a9f6fc9830446f5a9a8f066bae28f21b667cb531c8b105e51b265bc1af1
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 6522e57b7461e319840b15fef034c270ae7885614c23ced06573de3b3a1bb414
 
 build:
   noarch: python
